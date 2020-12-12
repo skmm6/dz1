@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            width: 200px;
+            height: 200px;
+            background-color: #d32121;
+            animation-name: myAnimation;
+            animation-duration: 10000ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            position: fixed;
+
+            
+        }
+        
+        @keyframes myAnimation {
+            0, 100% {
+                transform: translate(0);
+            }
+            25% {
+                transform: translate(1700px);
+            }
+            50% {
+                transform: translate(1700px, 720px);
+                
+            }
+            85% {
+                transform: translatey(720px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="block"></div>
+
+</body>
+</html>
